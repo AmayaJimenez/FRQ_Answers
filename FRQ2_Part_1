@@ -1,0 +1,7 @@
+Scanner ohReader = new Scanner(System.in);
+		  System.out.println("Enter the overime hours: ");
+		  totalOvertimeHours = ohReader.nextDouble();
+		  
+		  Scanner rhReader = new Scanner(System.in);
+		  System.out.println("Enter the total regular hours: ");
+		  totalRegularHours = rhReader.nextDouble();
