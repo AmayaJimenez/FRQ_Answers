@@ -1,0 +1,86 @@
+//Amaya Jimenez
+//September 18, 2017
+//Computer Science A, 6th Period
+import java.util.Scanner;
+
+public class FRQ2 {
+	
+		public static void main(String args []) {
+		  double hourlyWage;
+		  double totalRegularHours;
+		  double totalOvertimeHours;
+		  double totalWeeklyPay;
+		  double overtimeWage;
+		  
+		  double mondayRegularHours;
+		  double tuesdayRegularHours;
+		  double wednesdayRegularHours;
+		  double thursdayRegularHours;
+		  double fridayRegularHours;
+		  
+		  double mondayOverimeHours;
+		  double tuesdayOvertimeHours;
+		  double wednesdayOvertimeHours;
+		  double thursdayOvertimeHours;
+		  double fridayOvertimeHours;
+		  
+		  
+		  //Monday
+		  Scanner monRegReader = new Scanner(System.in);
+		  System.out.println("Enter the regular hours worked on Monday: ");
+		  mondayRegularHours = monRegReader.nextDouble();
+		  
+		  Scanner monOvertimeReader = new Scanner(System.in);
+		  System.out.println("Enter the overtime hours worked on Monday: ");
+		  mondayOverimeHours = monOvertimeReader.nextDouble();
+		  
+		  //Tuesday
+		  Scanner tueRegReader = new Scanner(System.in);
+		  System.out.println("Enter the regular hours worked on Tuesday: ");
+		  tuesdayRegularHours = tueRegReader.nextDouble();
+		  
+		  Scanner tueOvertimeReader = new Scanner(System.in);
+		  System.out.println("Enter the overtime hours worked on Tuesday: ");
+		  tuesdayOvertimeHours = tueOvertimeReader.nextDouble();
+		  
+		  //Wednesday
+		  Scanner wedRegReader = new Scanner(System.in);
+		  System.out.println("Enter the regular hours worked on Wednesday: ");
+		  wednesdayRegularHours = wedRegReader.nextDouble();
+		  
+		  Scanner wedOvertimeReader = new Scanner(System.in);
+		  System.out.println("Enter the overtime hours worked on Wednesday: ");
+		  wednesdayOvertimeHours = wedOvertimeReader.nextDouble();
+		  
+		  //Thurdsay
+		  Scanner thuRegReader = new Scanner(System.in);
+		  System.out.println("Enter the regular hours worked on Thursday: ");
+		  thursdayRegularHours = thuRegReader.nextDouble();
+		  
+		  Scanner thuOvertimeReader = new Scanner(System.in);
+		  System.out.println("Enter the overtime hours worked on Thurday: ");
+		  thursdayOvertimeHours = thuOvertimeReader.nextDouble();
+		  
+		  //Friday
+		  Scanner friRegReader = new Scanner(System.in);
+		  System.out.println("Enter the regular hours worked on Friday: ");
+		  fridayRegularHours = friRegReader.nextDouble();
+		  
+		  Scanner friOvertimeReader = new Scanner(System.in);
+		  System.out.println("Enter the overtime hours worked on Friday: ");
+		  fridayOvertimeHours = friOvertimeReader.nextDouble();
+		  
+		  Scanner hwReader = new Scanner(System.in);
+		  System.out.println("Enter the hourly wage: ");
+		  hourlyWage = hwReader.nextDouble();
+		  
+		 totalRegularHours =  mondayRegularHours + tuesdayRegularHours + wednesdayRegularHours + thursdayRegularHours + fridayRegularHours;
+		 totalOvertimeHours = mondayOverimeHours + tuesdayOvertimeHours + wednesdayOvertimeHours + thursdayOvertimeHours + fridayOvertimeHours;
+		  
+		  overtimeWage = totalOvertimeHours * (1.5 * hourlyWage);
+		  totalWeeklyPay = ((hourlyWage * totalRegularHours) + overtimeWage);
+		  
+		  System.out.println("The employee's total weekly pay is " + totalWeeklyPay);
+		 
+	}
+	}
