@@ -1,0 +1,24 @@
+//Amaya Jimenez
+//September 7th, 2017
+//Computer Science A 6th Period
+import java.util.Scanner;
+public class FRQ_1 {
+
+	public static void main (String[] args) {
+		double massInKilograms;
+		double velocity;
+		double force;
+		
+	Scanner kgreader = new Scanner(System.in);
+  System.out.println("Enter the mass of the object in kilograms: ");
+  massInKilograms = kgreader.nextDouble();
+  
+
+    Scanner vreader = new Scanner(System.in);
+    System.out.print("Enter the velocity of the object: ");
+    velocity = vreader.nextDouble();
+    
+    force = massInKilograms * velocity;
+    System.out.println("The force fo the object is " + force);
+	}
+}
